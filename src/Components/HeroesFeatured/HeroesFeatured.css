@@ -1,0 +1,4 @@
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+}

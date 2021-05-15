@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap');
+
+html {
+  font-family: 'Newsreader', serif;
+}
+
+body {
+  margin: 30px;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+.featured__hero__card {
+  height: 16rem;
+  width: 32rem;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  position: relative;
+  border-radius: 1.5rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px #a3a2a2;
+}
+
+.featured__hero__card:nth-of-type(3) {
+  margin-right: 0;
+}
+
+.featured__hero__card:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 10px 15px #a3a2a2;
+}
+
+.featured__hero__text {
+  width: 32rem;
+  height: 100%;
+  position: absolute;
+  padding-left: 42%;
+  top: 0;
+}
+
+.featured__hero__name {
+  margin: 20px 0 10px 0;
+}
+
+.featured__hero__img {
+  height: 16rem;
+  width: 12rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.featured__hero__powerstats {
+  height: 12rem;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.featured__hero__powerstats > div {
+  position: relative;
+}
+
+.featured__hero__powerstats > div > progress {
+  position: absolute;
+  right: 40px;
+}
