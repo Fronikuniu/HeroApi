@@ -3,7 +3,7 @@ import './HeroesFeatured.css';
 import { getBasicHeroInfoById } from '../../Requests/requests';
 import HeroFeatured from './HeroFeatured/HeroFeatured';
 
-const featuredHeroesIds = [10, 20, 30, 40];
+const featuredHeroesIds = [10, 20, 30, 40, 50];
 
 function HeroesFeatured() {
   useEffect(() => {

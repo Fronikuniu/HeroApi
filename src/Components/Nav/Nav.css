@@ -1,0 +1,35 @@
+.navi {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+}
+
+.navi > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  height: 70px;
+}
+
+.nav__search {
+  position: relative;
+}
+
+.nav__search > input {
+  width: 15rem;
+  height: 1.8rem;
+  border-radius: 10px;
+  padding-left: 15px;
+}
+
+button {
+  position: absolute;
+  top: 1.5px;
+  right: 0px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
