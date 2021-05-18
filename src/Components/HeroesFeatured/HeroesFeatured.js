@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import './HeroesFeatured.css';
 import { getBasicHeroInfoById } from '../../Requests/requests';
 import HeroFeatured from './HeroFeatured/HeroFeatured';
+import './HeroesFeatured.css';
 
-const featuredHeroesIds = [10, 20, 30, 40, 50];
+const featuredHeroesIds = [10, 20, 30, 40, 60, 505];
 
-function HeroesFeatured() {
+export default function HeroesFeatured() {
   useEffect(() => {
     fetchAndDisplayFeaturedHeroes();
   }, []);
@@ -23,11 +23,9 @@ function HeroesFeatured() {
 
   return (
     <section className="featured">
-      {featuredHeroesList.map(({ name, powerstats, imgUrl }) => (
-        <HeroFeatured name={name} powerstats={powerstats} imgUrl={imgUrl} />
+      {featuredHeroesList.map(({ name, imgUrl, powerstats, id }) => (
+        <HeroFeatured key={id} name={name} powerstats={powerstats} imgUrl={imgUrl} />
       ))}
     </section>
   );
 }
-
-export default HeroesFeatured;

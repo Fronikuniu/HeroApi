@@ -2,6 +2,7 @@
   width: 100%;
   height: 80px;
   background-color: black;
+  margin-bottom: 80px;
 }
 
 .navi > .container {
@@ -23,6 +24,7 @@
   height: 1.8rem;
   border-radius: 10px;
   padding-left: 15px;
+  border: none;
 }
 
 button {

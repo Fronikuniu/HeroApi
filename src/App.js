@@ -1,7 +1,8 @@
-import './App.css';
 import Nav from './Components/Nav/Nav';
 import HeroesFeatured from './Components/HeroesFeatured/HeroesFeatured';
+import SearchView from './Components/SearchView/SearchView';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './App.css';
 
 function App() {
   return (
@@ -9,15 +10,17 @@ function App() {
       <Router>
         <Nav />
         <main>
-          <section className="container">
+          <div className="container">
             <Switch>
               <Route exact path="/">
                 <HeroesFeatured />
               </Route>
-              <Route path="/hero/search/:name"></Route>
+              <Route path="/hero/search/:name">
+                <SearchView />
+              </Route>
               <Route path="/hero/:id"></Route>
             </Switch>
-          </section>
+          </div>
         </main>
         <footer>
           <div className="container">

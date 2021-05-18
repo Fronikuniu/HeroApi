@@ -46,11 +46,40 @@
   flex-direction: column;
 }
 
+.featured__hero__powerstats__icon {
+  height: 18px;
+}
+
 .featured__hero__powerstats > div {
   position: relative;
 }
 
 .featured__hero__powerstats > div > progress {
+  width: 11rem;
+  -webkit-appearance: none;
+  appearance: none;
   position: absolute;
   right: 20px;
+}
+
+progress::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(left, tomato, rgb(187, 74, 54));
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 6px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 6px;
+}
+
+.featured__hero__powerstats > div > span {
+  width: 11rem;
+  position: absolute;
+  top: 2px;
+  left: 36.3%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
 }
