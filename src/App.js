@@ -15,7 +15,7 @@ function App() {
               <Route exact path="/">
                 <HeroesFeatured />
               </Route>
-              <Route path="/hero/search/:name">
+              <Route path="/search/:name">
                 <SearchView />
               </Route>
               <Route path="/hero/:id"></Route>
