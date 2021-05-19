@@ -25,8 +25,11 @@ function App() {
         <footer>
           <div className="container">
             <p>
-              This content is kindly provided by
-              <a href="https://superheroapi.com/">SuperHero API</a>
+              This content is kindly provided by:
+              <a target="_blank" rel="noreferrer" href="https://superheroapi.com/">
+                {' '}
+                SuperHero API
+              </a>
             </p>
           </div>
         </footer>

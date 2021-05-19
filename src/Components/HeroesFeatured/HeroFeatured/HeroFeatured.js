@@ -12,7 +12,7 @@ function HeroFeatured({ name, imgUrl, powerstats }) {
             <label htmlFor="combat">Combat: </label>
             <progress id="combat" value={powerstats.combat} max="100"></progress>
             <span>
-              <img className="featured__hero__powerstats__icon" src={icon.combatIcon} alt="combat Icon" />{' '}
+              <img className="featured__hero__powerstats__icon" src={icon.combatIcon} alt="combat Icon" />
               {powerstats.combat}
             </span>
           </div>
@@ -20,7 +20,7 @@ function HeroFeatured({ name, imgUrl, powerstats }) {
             <label htmlFor="durability">Durability: </label>
             <progress id="durability" value={powerstats.durability} max="100"></progress>
             <span>
-              <img className="featured__hero__powerstats__icon" src={icon.durabilityIcon} alt="combat Icon" />{' '}
+              <img className="featured__hero__powerstats__icon" src={icon.durabilityIcon} alt="combat Icon" />
               {powerstats.durability}
             </span>
           </div>
@@ -28,7 +28,7 @@ function HeroFeatured({ name, imgUrl, powerstats }) {
             <label htmlFor="intelligence">Intelligence: </label>
             <progress id="intelligence" value={powerstats.intelligence} max="100"></progress>
             <span>
-              <img className="featured__hero__powerstats__icon" src={icon.intelligenceIcon} alt="combat Icon" />{' '}
+              <img className="featured__hero__powerstats__icon" src={icon.intelligenceIcon} alt="combat Icon" />
               {powerstats.intelligence}
             </span>
           </div>
@@ -36,7 +36,7 @@ function HeroFeatured({ name, imgUrl, powerstats }) {
             <label htmlFor="power">Power: </label>
             <progress id="power" value={powerstats.power} max="100"></progress>
             <span>
-              <img className="featured__hero__powerstats__icon" src={icon.powerIcon} alt="combat Icon" />{' '}
+              <img className="featured__hero__powerstats__icon" src={icon.powerIcon} alt="combat Icon" />
               {powerstats.power}
             </span>
           </div>
@@ -44,7 +44,7 @@ function HeroFeatured({ name, imgUrl, powerstats }) {
             <label htmlFor="speed">Speed: </label>
             <progress id="speed" value={powerstats.speed} max="100"></progress>
             <span>
-              <img className="featured__hero__powerstats__icon" src={icon.speedIcon} alt="combat Icon" />{' '}
+              <img className="featured__hero__powerstats__icon" src={icon.speedIcon} alt="combat Icon" />
               {powerstats.speed}
             </span>
           </div>
@@ -52,7 +52,7 @@ function HeroFeatured({ name, imgUrl, powerstats }) {
             <label htmlFor="strength">Strength: </label>
             <progress id="strength" value={powerstats.strength} max="100"></progress>
             <span>
-              <img className="featured__hero__powerstats__icon" src={icon.strengthIcon} alt="combat Icon" />{' '}
+              <img className="featured__hero__powerstats__icon" src={icon.strengthIcon} alt="combat Icon" />
               {powerstats.strength}
             </span>
           </div>

@@ -1,4 +1,9 @@
-.featured {
+.featured h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.featured__list {
   display: flex;
   flex-wrap: wrap;
 }

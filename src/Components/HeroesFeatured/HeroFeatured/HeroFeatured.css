@@ -24,12 +24,13 @@
   width: 32rem;
   height: 100%;
   position: absolute;
-  padding-left: 40%;
+  padding: 15px 15px 15px 40%;
   top: 0;
 }
 
 .featured__hero__name {
-  margin: 20px 0 10px 0;
+  margin: 0px;
+  font-size: 24px;
 }
 
 .featured__hero__img {
@@ -47,23 +48,26 @@
 }
 
 .featured__hero__powerstats__icon {
-  height: 0.9rem;
+  height: 1.1rem;
 }
 
 .featured__hero__powerstats > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
 }
 
 .featured__hero__powerstats > div > progress {
   width: 11rem;
+  height: 1.2rem;
   -webkit-appearance: none;
   appearance: none;
-  position: absolute;
-  right: 20px;
+  right: 10px;
 }
 
 progress::-webkit-progress-value {
-  background-image: -webkit-linear-gradient(left, tomato, rgb(187, 74, 54));
+  background-image: -webkit-linear-gradient(left, tomato, rgb(187, 76, 56));
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
   border-radius: 6px;
 }
@@ -75,11 +79,14 @@ progress::-webkit-progress-bar {
 }
 
 .featured__hero__powerstats > div > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 11rem;
+  height: 1.2rem;
   position: absolute;
-  top: 2px;
-  left: 36.3%;
+  top: 4px;
+  left: 41%;
   font-size: 1.1rem;
   font-weight: bold;
-  text-align: center;
 }
