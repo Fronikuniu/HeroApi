@@ -22,7 +22,7 @@ function Nav() {
             name="search"
             placeholder="Find Hero!"
           />
-          <Link to={`/search/${searchInputValue}`}>
+          <Link to={`/search/heroName=${searchInputValue}`}>
             <button className="material-icons">search</button>
           </Link>
         </div>

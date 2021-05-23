@@ -3,6 +3,7 @@ import HeroesFeatured from './Components/HeroesFeatured/HeroesFeatured';
 import SearchView from './Components/SearchView/SearchView';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import HeroDetails from './Components/HeroDetails/HeroDetails';
 
 function App() {
   return (
@@ -15,10 +16,12 @@ function App() {
               <Route exact path="/">
                 <HeroesFeatured />
               </Route>
-              <Route path="/search/:name">
+              <Route path="/search/heroName=:name">
                 <SearchView />
               </Route>
-              <Route path="/hero/:id"></Route>
+              <Route path="/hero/heroId=:id">
+                <HeroDetails />
+              </Route>
             </Switch>
           </div>
         </main>

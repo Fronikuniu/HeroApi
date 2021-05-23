@@ -16,6 +16,7 @@ function SearchView() {
       const { data } = searchResults;
 
       if (data.error) {
+        setLoadingState(false);
         return;
       }
 
@@ -34,7 +35,7 @@ function SearchView() {
         {!isLoading && (
           <div className="search__view__heroes">
             {searchList.map(({ powerstats, image, name, id }) => (
-              <HeroFeatured key={id} powerstats={powerstats} imgUrl={image.url} name={name} />
+              <HeroFeatured key={id} powerstats={powerstats} imgUrl={image.url} name={name} id={id} />
             ))}
           </div>
         )}

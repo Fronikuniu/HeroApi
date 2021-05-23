@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import { getBasicHeroInfoById } from '../../Requests/requests';
 import HeroFeatured from './HeroFeatured/HeroFeatured';
-import './HeroesFeatured.css';
 import Loader from '../Loader/Loader';
+import './HeroesFeatured.css';
 
 let liczba;
 let featuredHeroesIds = [];
@@ -37,7 +37,7 @@ export default function HeroesFeatured() {
         {!isLoading && (
           <div className="featured__list">
             {featuredHeroesList.map(({ name, imgUrl, powerstats, id }) => (
-              <HeroFeatured key={id} name={name} powerstats={powerstats} imgUrl={imgUrl} />
+              <HeroFeatured key={id} name={name} powerstats={powerstats} imgUrl={imgUrl} id={id} />
             ))}
           </div>
         )}{' '}

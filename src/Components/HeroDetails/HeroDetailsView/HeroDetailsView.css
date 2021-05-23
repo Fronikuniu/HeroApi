@@ -1,0 +1,97 @@
+.hero__details__view__card {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__details__view__card__avatar {
+  width: 480px;
+  border-radius: 35px;
+}
+
+.hero__details__view__card__text {
+  width: 640px;
+  padding: 20px;
+}
+
+.hero__details__view__card__text h1 {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.hero__details__view__card__text h1 > span {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: rgb(187, 76, 56);
+}
+
+.hero__details__view__card__text h2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin: 0 0 25px 0;
+}
+
+.hero__details__view__card__text h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  color: rgb(180, 27, 0);
+}
+
+.hero__details__view__card__text p {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.hero__details__view__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 46%;
+}
+
+.hero__details__view__item span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  width: 11rem;
+  height: 1.2rem;
+}
+
+.hero__details__view__powerstats {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.hero__details__view__powerstats__icon {
+  width: 1.1rem;
+}
+
+.hero__details__view__powerstats > div > progress {
+  width: 11rem;
+  height: 1.2rem;
+  -webkit-appearance: none;
+  appearance: none;
+  right: 10px;
+}
+
+.hero__details__view__powerstats > div > label {
+  font-size: 1rem;
+}
+
+progress::-webkit-progress-value {
+  background-image: -webkit-linear-gradient(left, tomato, rgb(187, 76, 56));
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 6px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 6px;
+}
