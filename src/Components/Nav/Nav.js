@@ -10,21 +10,24 @@ function Nav() {
     <nav className="navi">
       <div className="container">
         <Link to="/">
-          <img className="nav__logo" src={logo} alt="Superhero Database" />
+          <img className="nav__logo" src={logo} alt="Superhero" />
         </Link>
         <div className="nav__search">
-          <input
-            onChange={(event) => {
-              setSearchInputValue(event.target.value);
-            }}
-            value={searchInputValue}
-            type="text"
-            name="search"
-            placeholder="Find Hero!"
-          />
-          <Link to={`/search/heroName=${searchInputValue}`}>
-            <button className="material-icons">search</button>
-          </Link>
+          <form>
+            <input
+              onChange={(event) => {
+                setSearchInputValue(event.target.value);
+              }}
+              value={searchInputValue}
+              type="text"
+              name="search"
+              placeholder="Find Hero!"
+            />
+
+            <Link to={`/search=${searchInputValue}`}>
+              <button className="material-icons">search</button>
+            </Link>
+          </form>
         </div>
       </div>
     </nav>
