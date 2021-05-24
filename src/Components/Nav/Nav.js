@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import logo from '../../assets/img/nav_logo.png';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import './Nav.css';
 
 function Nav() {
@@ -13,7 +13,7 @@ function Nav() {
           <img className="nav__logo" src={logo} alt="Superhero" />
         </Link>
         <div className="nav__search">
-          <form>
+          <form onSubmit={<Redirect to={`/search=${searchInputValue}`} />}>
             <input
               onChange={(event) => {
                 setSearchInputValue(event.target.value);
