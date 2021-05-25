@@ -19,7 +19,7 @@ function App() {
               <Route path="/search=:name">
                 <SearchView />
               </Route>
-              <Route path="/hero/heroId=:id">
+              <Route path="/hero/id=:id">
                 <HeroDetails />
               </Route>
             </Switch>

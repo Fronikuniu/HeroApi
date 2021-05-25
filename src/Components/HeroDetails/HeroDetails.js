@@ -25,7 +25,6 @@ function HeroDetails() {
 
       setFullHeroInfo(results);
       setLoadingState(false);
-      console.log(results);
     });
   }, [id]);
 

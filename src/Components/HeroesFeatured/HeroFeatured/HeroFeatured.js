@@ -4,7 +4,7 @@ import './HeroFeatured.css';
 
 function HeroFeatured({ name, imgUrl, powerstats, id }) {
   return (
-    <Link className="featured__hero__card" to={`/hero/heroId=${id}`}>
+    <Link className="featured__hero__card" to={`/hero/id=${id}`}>
       <img className="featured__hero__img" src={imgUrl} alt={name + "'s photo"} />
       <div className="featured__hero__text">
         <h2 className="featured__hero__name">{name}</h2>

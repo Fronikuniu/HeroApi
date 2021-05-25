@@ -13,7 +13,12 @@ function Nav() {
           <img className="nav__logo" src={logo} alt="Superhero" />
         </Link>
         <div className="nav__search">
-          <form onSubmit={<Redirect to={`/search=${searchInputValue}`} />}>
+          <form
+            onSubmit={(event) => {
+              event.preventDefault();
+              <Redirect to={`/search=${searchInputValue}`} />;
+            }}
+          >
             <input
               onChange={(event) => {
                 setSearchInputValue(event.target.value);
