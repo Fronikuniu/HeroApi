@@ -11,19 +11,21 @@ function App() {
       <Router>
         <Nav />
         <main>
-          <div className="container">
-            <Switch>
-              <Route exact path="/">
-                <HeroesFeatured />
-              </Route>
-              <Route path="/search=:name">
-                <SearchView />
-              </Route>
-              <Route path="/hero/id=:id">
-                <HeroDetails />
-              </Route>
-            </Switch>
-          </div>
+          <section className="featured__hero">
+            <div className="container">
+              <Switch>
+                <Route exact path="/">
+                  <HeroesFeatured />
+                </Route>
+                <Route path="/search=:name">
+                  <SearchView />
+                </Route>
+                <Route path="/hero/id=:id">
+                  <HeroDetails />
+                </Route>
+              </Switch>
+            </div>
+          </section>
         </main>
         <footer>
           <div className="container">

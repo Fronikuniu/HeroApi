@@ -1,0 +1,22 @@
+.featured__hero__refresh > .container {
+  display: flex;
+  justify-content: center;
+}
+
+.featured__button {
+  width: 15rem;
+  height: 3rem;
+  background-color: white;
+  border: 2px solid tomato;
+  border-radius: 20px;
+  color: tomato;
+  font-weight: 700;
+  transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+}
+
+.featured__button:hover {
+  background-color: tomato;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+}

@@ -49,6 +49,7 @@
   align-items: center;
   position: relative;
   width: 46%;
+  margin-bottom: 5px;
 }
 
 .hero__details__view__item span {
@@ -58,7 +59,7 @@
   align-items: center;
   right: 0;
   width: 11rem;
-  height: 1.2rem;
+  height: 1.3em;
 }
 
 .hero__details__view__powerstats {
@@ -74,7 +75,7 @@
 
 .hero__details__view__powerstats > div > progress {
   width: 11rem;
-  height: 1.2rem;
+  height: 1.3rem;
   -webkit-appearance: none;
   appearance: none;
   right: 10px;

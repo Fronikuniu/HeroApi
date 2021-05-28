@@ -3,22 +3,16 @@ import { getBasicHeroInfoById } from '../../Requests/requests';
 import HeroFeatured from './HeroFeatured/HeroFeatured';
 import Loader from '../Loader/Loader';
 import './HeroesFeatured.css';
+import FeaturedHeroesRefresh from '../FeaturedHeroesRefresh/FeaturedHeroesRefresh';
 
-let liczba;
 let featuredHeroesIds = [];
-
-for (let i = 0; i < 4; i++) {
-  liczba = Math.floor(Math.random() * (731 - 0 + 1)) + 0; // Math.floor(Math.random() * (Max - Min + 1)) + Min
-  featuredHeroesIds.push(liczba);
-}
-
 export default function HeroesFeatured() {
+  const [featuredHeroesList, setFeaturedHeroesList] = useState([]);
+  const [isLoading, setLoadingState] = useState(true);
+
   useEffect(() => {
     fetchAndDisplayFeaturedHeroes();
   }, []);
-
-  const [featuredHeroesList, setFeaturedHeroesList] = useState([]);
-  const [isLoading, setLoadingState] = useState(true);
 
   const fetchAndDisplayFeaturedHeroes = async () => {
     let heroes = [];
@@ -47,6 +41,7 @@ export default function HeroesFeatured() {
           </div>
         )}
       </section>
+      <FeaturedHeroesRefresh />
     </>
   );
 }

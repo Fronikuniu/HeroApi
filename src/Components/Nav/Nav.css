@@ -28,7 +28,7 @@
   outline: none;
 }
 
-button {
+.search__button {
   position: absolute;
   top: 1px;
   right: 0px;

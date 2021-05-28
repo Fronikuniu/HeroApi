@@ -30,7 +30,7 @@ function Nav() {
             />
 
             <Link to={`/search=${searchInputValue}`}>
-              <button className="material-icons">search</button>
+              <button className="search__button material-icons">search</button>
             </Link>
           </form>
         </div>
