@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  width: 1120px;
+  width: 98%;
   margin: 0 auto;
 }
 
@@ -41,4 +41,19 @@ footer > .container > p > a {
 footer > .container > p > a:hover {
   text-decoration: none;
   color: rgb(199, 53, 0);
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 1120px;
+  }
 }

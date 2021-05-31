@@ -3,16 +3,30 @@ import { getBasicHeroInfoById } from '../../Requests/requests';
 import HeroFeatured from './HeroFeatured/HeroFeatured';
 import Loader from '../Loader/Loader';
 import './HeroesFeatured.css';
-import FeaturedHeroesRefresh from '../FeaturedHeroesRefresh/FeaturedHeroesRefresh';
 
-let featuredHeroesIds = [];
 export default function HeroesFeatured() {
   const [featuredHeroesList, setFeaturedHeroesList] = useState([]);
+  let [featuredHeroesIds, setFeaturedHeroesIds] = useState([1, 2, 3, 4]);
   const [isLoading, setLoadingState] = useState(true);
 
   useEffect(() => {
     fetchAndDisplayFeaturedHeroes();
   }, []);
+
+  const generateRandomIds = () => {
+    setLoadingState(true);
+
+    let numberOfId;
+    featuredHeroesIds = [];
+
+    for (let i = 0; i < 4; i++) {
+      numberOfId = Math.floor(Math.random() * (731 - 0 + 1)) + 0; // Math.floor(Math.random() * (Max - Min + 1)) + Min
+      featuredHeroesIds.push(numberOfId);
+    }
+
+    setFeaturedHeroesIds(featuredHeroesIds);
+    fetchAndDisplayFeaturedHeroes();
+  };
 
   const fetchAndDisplayFeaturedHeroes = async () => {
     let heroes = [];
@@ -23,6 +37,8 @@ export default function HeroesFeatured() {
     setFeaturedHeroesList(heroes);
     setLoadingState(false);
   };
+
+  console.log(featuredHeroesIds);
 
   return (
     <>
@@ -41,7 +57,17 @@ export default function HeroesFeatured() {
           </div>
         )}
       </section>
-      <FeaturedHeroesRefresh />
+
+      <section className="featured__hero__refresh">
+        {!isLoading && (
+          <div className="container">
+            <button onClick={() => generateRandomIds()} className="featured__button">
+              Show new Featured Heroes
+            </button>
+          </div>
+        )}
+        {isLoading && <></>}{' '}
+      </section>
     </>
   );
 }

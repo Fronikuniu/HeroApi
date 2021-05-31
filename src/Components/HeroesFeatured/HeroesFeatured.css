@@ -1,9 +1,55 @@
 .featured h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .featured__list {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+
+.featured__hero__refresh > .container {
+  display: flex;
+  justify-content: center;
+}
+
+.featured__button {
+  width: 15rem;
+  height: 3rem;
+  background-color: white;
+  border: 2px solid tomato;
+  border-radius: 20px;
+  color: tomato;
+  font-weight: 700;
+  transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+  cursor: pointer;
+}
+
+.featured__button:hover {
+  background-color: tomato;
+  border-radius: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .featured h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .featured h1 {
+    font-size: 3rem;
+  }
+
+  .featured__list {
+    flex-wrap: wrap;
+    flex-direction: unset;
+    align-items: unset;
+  }
+}
+
+@media (min-width: 1440px) {
 }

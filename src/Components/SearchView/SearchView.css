@@ -1,13 +1,38 @@
 .search__view h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .search__view__heroes {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 
 .search__view__name {
   color: tomato;
+}
+
+@media (min-width: 768px) {
+  .search__view h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .search__view h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .search__view__heroes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: unset;
+    align-items: unset;
+  }
+}
+
+@media (min-width: 1440px) {
 }
