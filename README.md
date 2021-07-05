@@ -9,3 +9,8 @@ In the project i used basics React Hooks such as `useState` and `useEffect`, i u
 ## Used API
 
 [https://superheroapi.com/]
+
+## Used technologies:
+
+- JS framework: React
+- CSS
