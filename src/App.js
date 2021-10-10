@@ -1,7 +1,7 @@
 import Nav from './Components/Nav/Nav';
 import HeroesFeatured from './Components/HeroesFeatured/HeroesFeatured';
 import SearchView from './Components/SearchView/SearchView';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import HeroDetails from './Components/HeroDetails/HeroDetails';
 
