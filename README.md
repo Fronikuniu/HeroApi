@@ -19,5 +19,5 @@ https://superheroapi.com/
 
 ## Used technologies:
 
-- JS framework: React
+- JS library: React
 - CSS
