@@ -8,8 +8,6 @@ In the project I used basic React Hooks such as `useState` and `useEffect`, i us
 
 ## Demo: 
 
-## Demo: 
-
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d670a8f1-7b03-468e-8e51-1b773c1a5a18/deploy-status)](https://app.netlify.com/sites/herodatabase-react/deploys) \
 https://herodatabase-react.netlify.app/
 
